@@ -50,6 +50,12 @@
 <div id="register_error" class="error">${errors[0]}</div>
 #{/ifErrors}
 
+#{if flash.error}
+<p class="error">
+    &{flash.error}
+</p>
+#{/if}
+
 <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
