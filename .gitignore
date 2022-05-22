@@ -47,3 +47,4 @@ local.properties
 # IDEA project files
 *.ipr
 *.iws
+users/

@@ -56,6 +56,9 @@ public class Application extends Controller {
     }
 
     public static void doSetMark(String student, Integer mark) {
+        // corrige mark sin autenticar
+        checkTeacher();
+
         User u = User.loadUser(student);
         u.setMark(mark);
         u.save();
